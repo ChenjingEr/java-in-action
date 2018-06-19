@@ -13,14 +13,14 @@ public class ExecuteCompare {
 
 	public static void main(String[] args) throws InterruptedException {
 
-		ExecuteCompare use = new ExecuteCompare();
+		ExecuteCompare cmp = new ExecuteCompare();
 		int n = 1000;
 		CountDownLatch cdl = new CountDownLatch(n);
 
 		long start = System.currentTimeMillis();
-		use.executorExecute(cdl, n);
+		cmp.executorExecute(cdl, n);
 		cdl.await();
-		System.out.println("用Thread执行：" + (System.currentTimeMillis() - start));
+		System.out.println("用Thread执 行：" + (System.currentTimeMillis() - start));
 
 	}
 
