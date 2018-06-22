@@ -19,7 +19,7 @@ public class CallableTaskExecute {
 	public static void main(String[] args) {
 		ExecutorService ex = Executors.newFixedThreadPool(2);
 		List<Future<Integer>> list = new ArrayList<>();
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 1; i++) {
 			Future<Integer> sum = ex.submit(new TaskByCallable());
 			list.add(sum);
 		}
