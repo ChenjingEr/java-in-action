@@ -13,12 +13,10 @@ public class Depot {
 	}
 
 	public void read() {
-		System.out.println(Thread.currentThread().getName() + " waiting read...");
 		readLock.lock();
-
 		try {
 			System.out.println(Thread.currentThread().getName() + " read...");
-			Thread.sleep(100);
+			Thread.sleep(500);
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		} finally {
@@ -28,8 +26,6 @@ public class Depot {
 	}
 
 	public void write() {
-		System.out.println(Thread.currentThread().getName() + " waiting write...");
-
 		writeLock.lock();
 		try {
 			System.out.println(Thread.currentThread().getName() + " write...");

@@ -31,5 +31,11 @@ public class ConcurrentPerformanceTestTool extends ThreadPoolExecutor {
 			System.out.println(funcname + " spend time : " + (System.currentTimeMillis() - startTime));
 		}
 	}
+	
+	public static void main(String[] args) {
+		int n = 16;
+		System.out.println(n>>>2);
+		System.out.println(n - (n >>> 2));
+	}
 
 }

@@ -1,6 +1,5 @@
 package pro.jing.multithreading.lock.reentrant;
 
-import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLockITry implements Runnable {
